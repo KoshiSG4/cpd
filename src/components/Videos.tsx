@@ -1,6 +1,4 @@
-import React from 'react';
 import { Stack, Box } from '@mui/material';
-import Loader from './Loader';
 import VideoCard from './VideoCard';
 import type { Video } from '../types/youtubeTypes';
 

@@ -1,16 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { Typography, Box, Stack } from '@mui/material';
-import Loader from './Loader';
 import ReactPlayer from 'react-player';
-import { CheckCircle } from '@mui/icons-material';
-import Videos from './Videos';
 import { getVideoDetails } from '../utils/fetchVideos';
-import {
-	type PlaylistItem,
-	type Video,
-	type VideoSnippet,
-} from '../types/youtubeTypes';
+import { type PlaylistItem, type Video } from '../types/youtubeTypes';
 
 const VideoDetail = () => {
 	const [videoDetail, setVideoDetail] = useState<PlaylistItem | null>(null);

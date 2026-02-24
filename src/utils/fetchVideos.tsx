@@ -1,9 +1,5 @@
 import { fetchFromAPI } from '../api/youtube';
-import {
-	type VideoSnippet,
-	type PlaylistItem,
-	type SearchResult,
-} from '../types/youtubeTypes';
+import { type PlaylistItem, type SearchResult } from '../types/youtubeTypes';
 
 export const getPlaylistVideos = async (playlistId: string) => {
 	const data = await fetchFromAPI<PlaylistItem>('playlistItems', {
