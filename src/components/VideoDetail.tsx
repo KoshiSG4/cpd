@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Typography, Box, Stack } from '@mui/material';
 import ReactPlayer from 'react-player';
 import { getVideoDetails } from '../utils/fetchVideos';
-import { type PlaylistItem, type Video } from '../types/youtubeTypes';
+import { type PlaylistItem } from '../types/youtubeTypes';
 
 const VideoDetail = () => {
 	const [videoDetail, setVideoDetail] = useState<PlaylistItem | null>(null);
