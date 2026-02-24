@@ -7,7 +7,6 @@ import { type PlaylistItem, type Video } from '../types/youtubeTypes';
 
 const VideoDetail = () => {
 	const [videoDetail, setVideoDetail] = useState<PlaylistItem | null>(null);
-	const [videos, setVideos] = useState<Video[]>([]);
 	const { id } = useParams<{ id: string }>();
 
 	useEffect(() => {
